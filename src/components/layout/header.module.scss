@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #036ed6;
+
+    .headerBox {
+        display: flex;
+        align-items: center;
+        width: 1200px;
+
+        .headerLogo {
+            display: flex;
+            align-items: center;
+            width: 20%;
+            color: #fff;
+            font-size: 24px;
+
+            .text {
+                margin-left: 10px;
+                letter-spacing: 2px;
+                font-size: 18px;
+            }
+
+            img {
+                height: 50px;
+            }
+        }
+
+        :global {
+
+            .ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected,
+            .ant-menu-light.ant-menu-horizontal>.ant-menu-submenu-selected {
+                background-color: #fff;
+            }
+
+            .ant-menu-light.ant-menu-horizontal>.ant-menu-item:hover,
+            .ant-menu-light.ant-menu-horizontal>.ant-menu-submenu:hover {
+                background-color: #0258ab;
+                color: #fff !important;
+            }
+
+            .ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title:hover {
+                color: #fff
+            }
+
+            .ant-menu-light.ant-menu-horizontal>.ant-menu-item-selected::after {
+                border: none;
+            }
+        }
+    }
+}
